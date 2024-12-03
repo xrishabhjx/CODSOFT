@@ -1,17 +1,14 @@
-/* appling google font over the website  */
 body{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     overflow-x: hidden;
 }
-/* styling menu icon */
 .nav-menu{
     border: none;
     background-color: #fff;
     font-size: 1.5rem;
     color: #fca61f;
 }
-/* styling navbar links  */
 .navbar-nav a{
     color: black;
     position: relative;
@@ -36,20 +33,17 @@ body{
     width: 100%; 
     left: 0; 
   }
-  /* styling contact btn  */
 .c-btn{
     border: none;
     background: #fca61f;
     color: #fff;
     font-size: 1.2rem;
 }
-
 .c-btn:hover{
     transform: translateY(-5px);
     transition: all 0.5s ease-in-out;
     background-color: rgba(45, 45, 183, 0.817);
 }
-/* styling home section starts */
 .home{
     background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 100%);
     padding: 30px 0px 10px 0px;
@@ -100,11 +94,9 @@ body{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
-/* adding animation to home section image  */
 .home img{
     animation: floatimg 4s ease-in-out infinite;
 }
-
 @keyframes floatimg {
     0%{
         transform: translateX(0);
@@ -116,8 +108,6 @@ body{
         transform: translateX(0);
     }
 }
-
-/* expertise section starts */
 .heading small{
     color: #6f34fe;
     font-size: 1.5rem;
@@ -145,8 +135,6 @@ body{
     padding: 15px 15px;
     border-radius: 0.7rem;
 }
-
-/* skill section starts */
 .skill{
     background-color: rgb(234, 234, 249);
 }
@@ -202,8 +190,6 @@ body{
 .heading p{
     font-size: 1.3rem;
 }
-
-/* portfolio section starts */
 #myBtnContainer{
     margin-bottom: 45px;
 }
@@ -220,7 +206,6 @@ body{
 #myBtnContainer button:hover{
     color: #fca61f;
 }
-
 #myBtnContainer button:focus{
     outline: none;
 }
@@ -231,8 +216,6 @@ body{
 .post .card{
     border: none;
 }
-
-/* testimonial section starts */
 .testimonial img:hover{
     transform: scale(1.2,1.2);
     transition-duration: 1s;
@@ -243,7 +226,6 @@ body{
 .testimonial i{
     font-size: 2.9rem;
     color: #fca61f;
-    
 }
 .testimonial .nextprev-btn{
     border: none;
@@ -259,8 +241,6 @@ body{
     transform: translateX(10px);
     transition-duration: 1s;
 }
-
-/* blog section starts */
 .blog{
     background-color: #f2f2ff;
 }
@@ -271,7 +251,6 @@ body{
 .nav-bg{
     background-color: #fff;
 }
-
 .blog .blogpost small{
     color: #6f34fe;
     font-size: 1.1rem;
@@ -293,7 +272,6 @@ body{
 .blog .blogpost .read-more-btn:hover{
     color: #6f34fe;
 }
-/* styling modal group  */
 .btn-c{
     margin-left: 94%;
     background-color: transparent;
@@ -312,7 +290,6 @@ body{
     font-size: 1rem;
     color: #6f34fe;
 }
-/* contact section starts */
 .contact{
     background-color: #f3f3f3;
 }
@@ -332,12 +309,9 @@ body{
     padding: 10px 10px;
     width: 80%;
 }
-
-/* footer section starts */
 footer{
     background-color: #211e39;
 }
-
 footer .link-group a{
     margin-left: 10px;
     margin-right: 10px;
@@ -367,27 +341,47 @@ footer .link-group a:hover{
 .social-links .facebook:hover{
     background-color: #316FF6;
 }
-.social-links .whatsapp{
-    color: #25D366;
-}
 .social-links .whatsapp:hover{
     background-color: #25D366;
 }
-.social-links .instagram{
-    color: #E1306C;
+.social-links .whatsapp{
+    color: #25D366;
 }
 .social-links .instagram:hover{
     background-color: #E1306C;
 }
-
-/* styling back to top button */
-#btn-back-to-top {
+.social-links .instagram{
+    color: #E1306C;
+}
+.social-links .youtube{
+    color: #FF0000;
+}
+.social-links .youtube:hover{
+    background-color: #FF0000;
+}
+.back-to-top{
     position: fixed;
-    bottom: 40px;
-    right: 40px;
-    display: none;
-    font-size: 1.4rem;
-    background-color: #fca61f;
-    color: #fff;
-    animation: pulse 3s infinite;
+    bottom: 20px;
+    right: 20px;
+    background-color: #211e39;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
